@@ -1,6 +1,46 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+/* -------------- head container ---------------*/
+.header-container {
+  width: 1440px;
+  height: 677px;
+  background-color: #2d25a0;
+}
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+nav {
+  width: 1160px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 5%;
+}
+.nav-left,
+.nav-right {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+
+}
+.nav-left ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 16px;
+}
+.link-button {
+    background-color: #E02C6D;
+    padding: 10px 20px;
+
+}
+.fa-sign-in-alt {
+  color: #ffffff;
+  margin-left: 8px;
+}
+/* ---------------- main container ----------------*/
 main {
   display: flex;
   flex-direction: column;
