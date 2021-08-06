@@ -147,8 +147,8 @@ footer img{
 
 
 /*--------------- Media Queries ------------------*/
-
-@media only screen and (max-width:688px) {
+/*  Extra small devices (portrait phones, less than 576px) */
+@media only screen and (max-width:576px) {
 
     .container{
         width: 100%;
@@ -157,8 +157,6 @@ footer img{
 
     .head-container{
         height: 100%;
-        
-        
     }
     .players, .item, .head{
         grid-template-columns: repeat(1,1fr);
@@ -175,7 +173,7 @@ footer img{
 
   .section-title{
       font-size: 30px;
-      line-height: 40px;
+      
   }
   footer img{
       width: 250px;
@@ -188,4 +186,63 @@ footer img{
   }
     
 }
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .container{
+        width: 100%;
+        height: 100%;
+    }
+    .head{
+        position:absolute;
+    }
+    .head-container{
+        height: 100%;
+    }
+    .players, .item, .head{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .player{
+        flex-direction: column;
+    }
 
+  .half-width1 img{
+      width: 250px;
+      height: 200px;
+    
+  }
+
+  .section-title{
+      font-size: 45px;
+      
+  }
+  footer img{
+      width: 250px;
+      height: 75px;
+  }
+
+  .item1{
+      margin-left: 100px;
+      margin-bottom: 30px;
+  }
+}
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    .header-container{
+       width: 1800px;
+    }
+    .players{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .player{
+        flex-direction: column;
+    }
+  footer img{
+      width: 350px;
+      height: 75px;
+  }
+
+  
+    
+
+
+ }
